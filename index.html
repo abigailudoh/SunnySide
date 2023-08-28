@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Sunnyside Landing Page</title>
+</head>
+<body>
+    <div class="hero h-fit relative>
+      <img class="absolute top-0" src="./images/desktop/image-header.jpg" alt="hero">
+
+        
+        <header class="z-10 h-30 bg-headercyan md:py-9 p-10 md:max-w-full md:mx-auto">
+            <nav class="md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                <span><img class="h-8" src="./images/logo.png" alt="logo"></span>
+                <span class="text-3xl text-White cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+                </div>
+                
+                <ul class="md:flex md:items-center z-1 md:z-auto md:static absolute bg-headercyan w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top[-400px] transition-all ease-in duration-500">
+                    <li class="mx-4 my-6 md:my-0"><a href="#about" class="text-White font-['Barlow']">About</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#services" class="text-White font-['Barlow']">Services</a></li>
+                    <li class="mx-4 my-6 md:my-0"><a href="#projects" class="text-White font-['Barlow']">Projects</a></li>
+                    <button class="w-32 h-12 mx-4 bg-White font-['Fraunces'] font-bold rounded-3xl uppercase">contact</button>
+                </ul>
+            </nav>  
+            <script>
+                function Menu(e){
+                    let list = document.querySelector('ul');
+                    e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+                }
+            </script>    
+        </header>
+        
+        <img class="" src="./images/desktop/image-header.jpg" alt="hero">
+        <p class="absolute md:top-64 md:right-72 top-48 right-72 w-48 md:w-max font-['Fraunces'] uppercase text-4xl md:text-6xl text-White font-black text-center tracking-widest">We are creatives</p>
+        <img class="absolute md:bottom-20 md:inset-x-1/2 bottom-52 inset-x-1/2" src="./images/icon-arrow-down.png" alt="arrow-down">
+    </div> 
+    <section class="h-fit max-w-full">
+        <div class="md:flex md:flex-row-reverse">
+          <div>
+            <img class="md:h-screen md:max-w-2xl" src="./images/desktop/image-transform.jpg" alt="image-transform">
+          </div>
+          <div class="w-auto h-screen md:max-w-2xl bg-White pt-24 px-2 md:px-16 md:pt-36">
+            <p class="font-['Fraunces'] text-6xl text-Vddblue font-black mb-12 w-96 text-center mx-auto md:text-4xl md:w-96 md:text-left md:mx-0">Transform your brand</p>
+            <p class="font-['Barlow'] text-3xl text-Grayishblue mb-12 text-center mx-auto md:text-xl md:text-left md:mx-0">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <p class="font-['Fraunces'] text-Vddblue text-2xl font-bold uppercase underline decoration-solid decoration-8 decoration-Yellow text-center mx-auto md:text-left md:mx-0">Learn more</p>
+          </div>
+        </div>
+        <div class="md:flex">
+          <div>
+            <img class="md:h-screen" src="./images/desktop/image-stand-out.jpg" alt="image-stand-out">
+          </div>
+          <div class="w-auto h-screen md:max-w-2xl bg-White pt-24 px-2 md:px-16 md:pt-36">
+            <p class="font-['Fraunces'] text-6xl text-Vddblue font-black mb-12 text-center mx-auto md:text-4xl md:w-80 md:text-left md:mx-0">Stand out to the right audience</p>
+            <p class="font-['Barlow'] text-3xl text-Grayishblue mb-12 text-center mx-auto md:text-xl md:text-left md:mx-0">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+            <p class="font-['Fraunces'] text-Vddblue text-2xl font-bold uppercase underline decoration-solid decoration-8 decoration-red text-center mx-auto md:text-left md:mx-0">Learn more</p>
+          </div>
+        </div>
+        <div class="md:flex">
+            <div class="h-fit w-auto relative">
+                <img class="md:h-screen md:max-w-a" src="./images/desktop/image-graphic-design.jpg" alt="image-graphic-design">
+                <div class="absolute bottom-4 md:px-20">
+                <p class="font-['Fraunces'] text-cyan text-5xl font-bold text-center mb-4 md:text-3xl">Graphic Design</p>
+                <p class="font-['Barlow'] text-cyan text-3xl font-thin text-center mb-12 md:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </div>
+            </div>
+            <div class="h-fit w-auto relative">
+                <img class="md:h-screen md:max-w-2xl" src="./images/desktop/image-photography.jpg" alt="image-photography">
+                <div class="absolute bottom-8 md:px-20">
+                <p class="font-['Fraunces'] text-blue text-5xl font-bold text-center mb-4 md:text-3xl">Photography</p>
+                <p class="font-['Barlow'] text-blue text-3xl font-thin text-center mb-12 md:text-xl">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="h-fit bg-White max-w-full pt-28 md:h-screen md:px-24 md:py-32">
+        <p class="font-['Fraunces'] text-3xl text-center text-Grayishblue font-bold tracking-widest uppercase md:text-xl">client testimonials</p>
+        <div class="md:flex md:gap-8">
+        <div class="flex flex-col items-center px-10 py-24 md:px-0">
+            <img class="rounded-full w-32 md:w-20 mb-12" src="./images/image-emily.jpg" alt="image-emily">
+            <p class="font-['Barlow'] text-Vdgblue text-4xl leading-relaxed text-center mb-12 md:text-lg">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.  </p>
+            <p class="font-['Fraunces'] text-4xl font-bold text-Vddblue text-center mb-6 md:text-lg">Emily R.</p>
+            <p class="font-['Barlow'] text-2xl text-Grayishblue text-center md:text-base">Marketing Director</p>
+        </div>
+
+        <div class="flex flex-col items-center px-10 pb-24 md:pt-24 md:px-0">
+            <img class="rounded-full w-32 md:w-20 mb-12" src="./images/image-thomas.jpg" alt="image-thomas">
+            <p class="font-['Barlow'] text-Vdgblue text-4xl leading-relaxed text-center mb-12 md:text-lg"> Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience. </p>
+            <p class="font-['Fraunces'] text-4xl font-bold text-Vddblue text-center mb-6 md:text-lg">Thomas S.</p>
+            <p class="font-['Barlow'] text-2xl text-Grayishblue text-center md:text-base"> Chief Operating Officer</p>
+        </div>
+
+        <div class="flex flex-col items-center px-10 pb-32 md:pt-24 md:px-0">
+            <img class="rounded-full w-32 md:w-20 mb-12" src="./images/image-jennie.jpg" alt="image-jennie">
+            <p class="font-['Barlow'] text-Vdgblue text-4xl leading-relaxed text-center mb-12 md:text-lg"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <p class="font-['Fraunces'] text-4xl font-bold text-Vddblue text-center mb-6 md:text-lg">Jennie F.</p>
+            <p class="font-['Barlow'] text-2xl text-Grayishblue text-center md:text-base">Business Owner</p>
+        </div>
+        </div>
+    </section>
+    <section class="h-fit max-w-full pt-32">
+        <div class="grid grid-cols-2 md:flex">
+            <img class="md:h-96" src="./images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+            <img class="md:h-96" src="./images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
+            <img class="md:h-96" src="./images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
+            <img class="md:h-96" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes">
+        </div>
+    </section>
+    <footer class="h-fit max-w-full mx-auto bg-footergreen py-24 md:py-16">
+        <div class="flex flex-col items-center">
+            <img class="w-80 mb-20 md:w-44 md:mb-10" src="./images/logo.png" alt="logo">
+            <ul class="flex gap-20 mb-32 md:mb-20">
+                <li><a href="#about" class="font-['Barlow'] text-3xl md:text-lg text-cyan">About</a></li>
+                <li><a href="#services" class="font-['Barlow'] text-3xl md:text-lg text-cyan">Services</a></li>
+                <li><a href="#projects" class="font-['Barlow'] text-3xl md:text-lg text-cyan">Projects</a></li>
+            </ul>
+            <div class="flex gap-12 mb-12">
+                <a href="#facebook"><img class="h-10 md:h-6" src="./images/icon-facebook.png" alt="icon-facebook"></a>
+                <a href="#instagram"><img class="h-10 md:h-6" src="./images/icon-instagram.png" alt="icon-instagram"></a>
+                <a href="#twitter"><img class="h-10 md:h-6" src="./images/icon-twitter.png" alt="icon-twitter"></a>
+                <a href="#pinterest"><img class="h-10 md:h-6" src="./images/icon-pinterest.png" alt="icon-pinterest"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
